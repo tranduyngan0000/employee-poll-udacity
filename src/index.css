@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.App {
+  width: 1200px;
+  margin: auto;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+.navigation-title {
+  width: 10%;
+  text-align: left;
+}
+
+.navigation-title span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navigation-main {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-left a {
+  padding: 5px;
+  margin: 0 0 0 5px;
+}
+.navigation-right .avatar {
+  border-radius: 100%;
+  border: 1px solid;
+  width: 50px;
+}
+
+.navigation-left {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-right>div {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end
+}
+
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-image {
+  height: auto;
+  width: 50%;
+}
+.login-form {
+  display: flex;
+  margin: auto;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.login-form label {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.login-form input {
+  font-size: 15px;
+  text-align: left;
+  width: 300px;
+  margin: 5px 0 20px 0;
+}
+
+.login-form button {
+  width: 100px;
+  margin: auto;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.home {
+  text-align: left;
+}
+
+.home-list {
+  display: flex;
+  border: 3px solid #eeeeee;
+  padding: 20px;
+}
+
+.question-card {
+  border: 1px solid #e3e3e3;
+  padding: 15px;
+  margin: 0 20px 0px 0px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.leaderboard {
+  width: 100%;
+  text-align: left;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding:5px
+}
+.leaderboard-user {
+  width: 60%;
+}
+.leaderboard-answered {
+  width: 20%;
+}
+.leaderboard-created {
+  width: 20%;
+}
+.leaderboard-user p {
+  margin: 0px;
+}
+
+.leaderboard-user .userid {
+  font-size: 11px;
+}
+.leaderboard-info {
+    display: flex;
+}
+
+.leaderboard-avatar {
+    width: 30px;
+}
+
+.createquestion-form {
+  display: flex;
+  margin: auto;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.createquestion-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.createquestion-form label {
+  font-size: 20px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.createquestion-form input {
+  font-size: 15px;
+  text-align: left;
+  width: 300px;
+  margin: 5px 0 20px 0;
+}
+
+.createquestion-form button {
+  width: 100px;
+  margin: auto;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.answer {
+  border: 1px solid #3e33e3;
+  width: 40%;
+}
+
+.chooseanswer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+
+}
+
+.answer p {
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid #3e33e3;
+}
+
+.answer button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+}
+
+.isVoted {
+  background: #31A24C;
+  color: #ffffff;
+}
