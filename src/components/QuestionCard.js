@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const QuestionCard = (props) => {
+const QuestionCard = ({ question }) => {
   const formatDate = (timestamp) => {
     const options = {
       year: 'numeric',
@@ -15,9 +15,9 @@ const QuestionCard = (props) => {
 
   return (
     <div className='question-card'>
-      <p className='question-author'>{props.question.author}</p>
-      <p className='question-time'>{formatDate(props.question.timestamp)}</p>
-      <Link to={`/questions/${props.question.id}`}>Show</Link>
+      <p className='question-author'>{question.author}</p>
+      <p className='question-time'>{formatDate(question.timestamp)}</p>
+      <Link to={`/questions/${question.id}`}>Show</Link>
     </div>
   );
 };

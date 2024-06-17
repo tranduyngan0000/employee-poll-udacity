@@ -43,6 +43,7 @@ const Login = () => {
       <form onSubmit={handleSubmit} className='login-form'>
         <label>Username</label>
         <input
+          data-testid='username'
           type='text'
           placeholder='Enter username'
           value={username}
@@ -50,14 +51,15 @@ const Login = () => {
         />
         <label>Password</label>
         <input
+          data-testid='password'
           type='password'
           placeholder='Enter password'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button>Login</button>
+        <button data-testid='button-submit'>Login</button>
       </form>
-      {error && <div>{error}</div>}
+      {error && <div data-testid='error'>{error}</div>}
     </div>
   );
 };
